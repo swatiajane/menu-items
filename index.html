@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      .required::after {
+        content: "*";
+        color: red;
+        font-size: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Subscriber</h2>
+      <p style="background-color: rgb(79, 170, 240)">
+        We're sorry to see you go,but hey,no hard feelings,hopefully we will see
+        you back one day. Please fill in your email address in order to
+        unsubscribe from the list. you will receive an email to confrim your
+        unsubscription,just to make sure this is not an accident or somebody
+        else tries to unsubscribe you.
+      </p>
+      <form>
+        <label class="required">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="Unsubscribe Reason">Unsubscribe Reason:</label>
+        <input
+          type="password"
+          id="Unsubscribe Reason"
+          name="Unsubscribe Reason"
+          placeholder="Unsubscribe Reason"
+        />
+        <button type="submit">Unsubscribe</button>
+      </form>
+    </div>
+  </body>
+</html>
